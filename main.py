@@ -14,9 +14,9 @@ ALGORITHM = "RS256"
 #                                   Read Data                                  #
 # ---------------------------------------------------------------------------- #
 
-with open("keys/private_key.pem", "r") as f:
+with open("keys/jwt_private_key.pem", "r") as f:
     PRIVATE_KEY = f.read()
-with open("keys/public_key.pem", "r") as f:
+with open("keys/jwt_public_key.pem", "r") as f:
     PUBLIC_KEY = f.read()
 with open("templates/sign-in.html", "r") as f:
   login_html = f.read()
