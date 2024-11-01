@@ -74,7 +74,7 @@ async def login(
 ):
     # Check if user exists
     user = get_user_data(
-        server_url="http://lectorium:lectorium@database:5984", # TODO: Get from env
+        server_url=DATABASE_CONNECTION_STRING,
         username=username
     )
     if user is None:
